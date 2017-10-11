@@ -1,0 +1,9 @@
+.footer {
+  display: flex;
+  color: $white;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  &__info {
+    border-bottom: 3px solid $white;
+  }
+}
