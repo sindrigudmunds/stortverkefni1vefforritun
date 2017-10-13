@@ -1,7 +1,7 @@
 @charset "UTF-8";
 *, *:before, *:after {
   /* stylelint-disable-line */
-  box-sizing: inherit;
+  box-sizing: border-box;
   /* fjarlægjum margin og padding */
   padding: 0;
   margin: 0; }
@@ -65,7 +65,7 @@ main {
   margin-bottom: 160px;
   background-image: url("../bg.jpg");
   background-attachment: fixed;
-  align-items: center; }
+  text-align: center; }
   .header__content {
     padding: 160px; }
 
@@ -79,8 +79,7 @@ main {
     font-size: 1em; }
 
 .text {
-  padding: 20px;
-  margin-left: 40px; }
+  padding: 20px; }
 
 .navbar {
   position: fixed;
@@ -126,9 +125,45 @@ main {
     .col-sm-3 {
       width: 25%; } }
 
-.offset-2 {
-  margin-left: 16.66667%; }
+/*.offset {
+  &-2 {
+    margin-left: (2 / 12 * 100) * 1%; // reiknað einsog að ofan
+  }
 
-@media (max-width: 599px) {
-  .offset-sm-0 {
-    margin-left: 0; } }
+  &-sm {
+    @media (max-width: 599px) {
+      &-0 {
+        margin-left: 0;
+      }
+    }
+  }
+}
+*/
+.roundimg {
+  border-radius: 50%; }
+
+.profilecard {
+  width: 100%;
+  overflow: hidden; }
+  .profilecard:hover {
+    background-color: #ddd; }
+  .profilecard__content {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center; }
+  .profilecard__text {
+    margin-bottom: 30px; }
+  .profilecard__img {
+    border-radius: 50%; }
+  @media (min-width: 600px) {
+    .profilecard--wide {
+      display: flex; } }
+  @media (min-width: 600px) {
+    .profilecard--wide .profilecard__content {
+      align-items: flex-start; } }
+  @media (min-width: 600px) {
+    .profilecard--wide .profilecard__img {
+      min-width: 400px;
+      height: 100%;
+      object-fit: cover; } }
