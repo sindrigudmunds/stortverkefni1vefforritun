@@ -65,18 +65,23 @@ main {
   margin-bottom: 160px;
   background-image: url("../bg.jpg");
   background-attachment: fixed;
-  text-align: center; }
+  text-align: center;
+  background-size: cover;
+  background-position: center; }
   .header__content {
     padding: 160px; }
 
 .heading {
   font-family: Roboto Slab; }
   .heading--one {
-    font-size: 3em; }
+    font-size: 4em;
+    font-weight: bolder; }
   .heading--two {
-    font-size: 1.5em; }
+    font-size: 2em;
+    font-weight: 500; }
   .heading--three {
-    font-size: 1em; }
+    font-size: 2em;
+    font-family: 'Open Sans'; }
 
 .text {
   padding: 20px; }
