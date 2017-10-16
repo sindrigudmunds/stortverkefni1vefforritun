@@ -8,4 +8,9 @@
   margin: 0;
   list-style-type: none;
   background-color: rgba(0, 0, 0, 0.8);
+
+  &__link {
+    font-family: inherit;
+    color: $white;
+  }
 }

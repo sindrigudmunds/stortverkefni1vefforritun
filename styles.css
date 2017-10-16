@@ -65,7 +65,7 @@ main {
   margin-bottom: 160px;
   background-image: url("../bg.jpg");
   background-attachment: fixed;
-  text-align: center;}
+  text-align: center; }
   .header__content {
     padding: 160px; }
 
@@ -91,6 +91,9 @@ main {
   margin: 0;
   list-style-type: none;
   background-color: rgba(0, 0, 0, 0.8); }
+  .navbar__link {
+    font-family: inherit;
+    color: white; }
 
 .footer {
   display: flex;
@@ -175,11 +178,11 @@ main {
     flex-direction: column;
     align-items: center; }
   .profilecard__quote {
-    font-family: Roboto Slab;
-    font-size: 3rem; }
+    font-family: 'Roboto Slab';
+    font-size: 1em; }
   .profilecard__heading {
-    font-family: Roboto Slab;
-    font-size: 2rem; }
+    font-family: 'Roboto Slab';
+    font-size: 0.5em; }
   .profilecard__text {
     margin-bottom: 30px; }
   .profilecard__img {
