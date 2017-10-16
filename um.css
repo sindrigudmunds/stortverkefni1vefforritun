@@ -50,7 +50,6 @@ body {
 section {
   margin-bottom: 20px;
   background-color: yellow;
-  flex-wrap: wrap;
 }
 
 .grid {
@@ -67,8 +66,8 @@ section {
 }
 
 .col {
-  padding-left: 26px;
-  padding-right: 10px;
+  padding-left: 35px;
+  padding-right: 15px;
 }
 
 .col-12 {
@@ -79,28 +78,47 @@ section {
   width: 50%;
 }
 
+
 .heading {
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab', serif;
 }
-  .heading--one {font-size: 3em;}
+  .heading--one {
+    font-size: 3em;
+    color: white;
+  }
   .heading--two{font-size: 2em;}
 
 .text {
   background-color: red;
+  font-family: 'Open Sans', sans-serif;
 }
   .blockquote{
   }
 
-  .header {
-    display: flex;
-    background-image: url(bg-subpage.jpg);
-    background-position: center;
-    background-size: cover;
+.header {
+  display: flex;
+  background-image: url(bg-subpage.jpg);
+  background-position: center;
+  background-size: cover;
+}
+  .header__content {
+    padding: 50px 50px 50px 2%;
+    width: 100%;
   }
-  @media (max-width: 400px) {
-    .header{background-size: auto;}
+@media (max-width: 600px) {
+  .row {}
+  .col {width: 100%;}
+  .text--blockquote {
+    margin: 30px;
+    float: right;
   }
-    .header__content {
-          padding: 50px 50px 50px 1%;
-          width: 100%;
-        }
+}
+@media (max-width: 400px) {
+  .header{background-size: auto;}
+  .col-6{width: 100%;}
+  .row {flex-wrap: wrap;}
+  .col {width: 100%;}
+  .text--blockquote {
+    margin: 30px;
+  }
+}
