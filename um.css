@@ -1,10 +1,50 @@
 
+:root {
+  --offset: 10px;
+  --max_width: 72rem;
+  --columns: 12;
+  --gutter: 20px;
+  --color: hsla(204, 80%, 72%, 0.25);
+}
+
+/* Helper variables */
+:root {
+  --repeating-width: calc(100% / var(--columns));
+  --column-width: calc((100% / var(--columns)) - var(--gutter));
+  --background-width: calc(100% + var(--gutter));
+  --background-columns: repeating-linear-gradient(
+    to right,
+    var(--color),
+    var(--color) var(--column-width),
+    transparent var(--column-width),
+    transparent var(--repeating-width)
+  );
+}
+
+/* Styling */
 html {
   position: relative;
 }
 
+html::before {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: calc(100% - (2 * var(--offset)));
+  max-width: var(--max_width);
+  min-height: 100vh;
+  content: '';
+  background-image: var(--background-columns);
+  background-size: var(--background-width) 100%;
+  z-index: 1000;
+  pointer-events: none;
+}
+
 body {
   font-size: 16px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 section {
@@ -13,25 +53,31 @@ section {
   flex-wrap: wrap;
 }
 
-.row {
-  width: 100%;
-  margin-left: -10px;
-  margin-right: -10px;
-  display: flex;
-  flex-direction: row-reverse;
-  align-content: stretch;
+.grid {
+  max-width: 1200;
+  margin: 0 auto;
 }
 
-.col{
+.row {
+  width: 100%;
   display: flex;
-  padding-left: 10px;
+  flex-direction: row-reverse;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.col {
+  padding-left: 26px;
   padding-right: 10px;
 }
-  .col-12{width: 100%;}
-  .col-6{width: 50%;}
-  @media (max-width: 400px) {
-    .col-6{width: 100%;}
-  }
+
+.col-12 {
+  width: 100%;
+}
+
+.col-6 {
+  width: 50%;
+}
 
 .heading {
   font-family: Roboto Slab;
