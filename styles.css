@@ -175,17 +175,19 @@ main {
   }
   */ }
   .profilecard__content {
+    font-family: 'Open Sans';
     display: flex;
     padding: 15px;
     text-align: center;
     flex-direction: column;
     align-items: center; }
   .profilecard__quote {
-    font-family: 'Roboto Slab';
-    font-size: 1em; }
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold; }
   .profilecard__heading {
-    font-family: 'Roboto Slab';
-    font-size: 0.5em; }
+    font-size: 1em;
+    font-weight: bold; }
   .profilecard__text {
     margin-bottom: 30px; }
   .profilecard__img {
