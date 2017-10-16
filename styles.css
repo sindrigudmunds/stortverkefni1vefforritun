@@ -92,8 +92,18 @@ main {
   list-style-type: none;
   background-color: rgba(0, 0, 0, 0.8); }
   .navbar__link {
+    align-content: flex-end;
+    display: block;
+    padding-right: 10px;
+    padding-left: 10px;
     font-family: inherit;
-    color: white; }
+    text-decoration: none;
+    float: right; }
+  .navbar_titill {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: 'Open Sans';
+    color: #eee; }
 
 .footer {
   display: flex;
@@ -130,20 +140,13 @@ main {
     .col-sm-3 {
       width: 25%; } }
 
-/*.offset {
-  &-2 {
-    margin-left: (2 / 12 * 100) * 1%; // reiknað einsog að ofan
-  }
+.offset-2 {
+  margin-left: 16.66667%; }
 
-  &-sm {
-    @media (max-width: 599px) {
-      &-0 {
-        margin-left: 0;
-      }
-    }
-  }
-}
-*/
+@media (max-width: 599px) {
+  .offset-sm-0 {
+    margin-left: 0; } }
+
 .roundimg {
   border-radius: 50%; }
 
