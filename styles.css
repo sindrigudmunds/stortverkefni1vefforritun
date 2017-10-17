@@ -65,9 +65,13 @@ main {
   margin-bottom: 160px;
   background-image: url("../bg.jpg");
   background-attachment: fixed;
+<<<<<<< HEAD
+  text-align: center; }
+=======
   text-align: center;
   background-size: cover;
   background-position: center; }
+>>>>>>> a12a1b9b2238e6759f33659671f6c4634c59e944
   .header__content {
     padding: 160px; }
 
@@ -199,3 +203,45 @@ main {
   .profilecard__img {
     width: 100%;
     height: 100%; }
+
+fieldset {
+  border: none;
+  font-family: Open Sans; }
+
+input, button, select, option {
+  font-family: inherit; }
+
+.form__row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.form__col {
+  width: 100%;
+  display: flex;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0 0 20px;
+  /*@media (min-width 600px) {
+		.form__col {
+			width: 50%;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.form__col {
+			margin-right: (1/12 * 100) * 1%;
+			margin-left: (1/12 * 100) * 1%;
+		}
+	}*/ }
+
+.form {
+  width: 100%;
+  min-width: 200px;
+  max-width: 800px;
+  overflow: hidden;
+  align-items: center; }
+  .form__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start; }
