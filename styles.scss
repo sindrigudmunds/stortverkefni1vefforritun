@@ -2,6 +2,7 @@
 $max-width: 1200px;
 $gutter: 20px;
 $white: rgb(255, 255, 255);
+$a-tags: 'a, a:active, a:hover, a:visited';
 
 *, *:before, *:after { /* stylelint-disable-line */
   box-sizing: border-box;
