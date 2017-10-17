@@ -6,6 +6,13 @@
   background-image: url("../bg.jpg");
   background-attachment: fixed;
   text-align: center;
+<<<<<<< HEAD
+  background-position: center;
+  background-size: cover;
+=======
+  background-size: cover;
+  background-position: center;
+>>>>>>> a12a1b9b2238e6759f33659671f6c4634c59e944
 
   &__content {
     padding: ($gutter * 8);

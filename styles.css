@@ -9,7 +9,7 @@
 html {
   margin-right: 20px;
   margin-left: 20px;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5; }
   @media (min-width: 1200px) {
@@ -65,18 +65,28 @@ main {
   margin-bottom: 160px;
   background-image: url("../bg.jpg");
   background-attachment: fixed;
-  text-align: center; }
+  text-align: center;
+<<<<<<< HEAD
+  background-position: center;
+  background-size: cover; }
+=======
+  background-size: cover;
+  background-position: center; }
+>>>>>>> a12a1b9b2238e6759f33659671f6c4634c59e944
   .header__content {
     padding: 160px; }
 
 .heading {
-  font-family: Roboto Slab; }
+  font-family: Roboto Slab, serif; }
   .heading--one {
-    font-size: 3em; }
+    font-size: 4em;
+    font-weight: bolder; }
   .heading--two {
-    font-size: 1.5em; }
+    font-size: 2em;
+    font-weight: 500; }
   .heading--three {
-    font-size: 1em; }
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif; }
 
 .text {
   padding: 20px; }
@@ -87,23 +97,32 @@ main {
   display: flex;
   width: 100%;
   height: 40px;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  background-color: rgba(0, 0, 0, 0.8); }
-  .navbar__link {
-    align-content: flex-end;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  list-style: none;
+  align-items: center; }
+  .navbar__titill {
     display: block;
+    font-family: 'Roboto Slab';
+    font-weight: bolder;
+    font-size: 1.25em;
+    color: white; }
+  .navbar__link {
+    position: fixed;
+    right: 80px;
     padding-right: 10px;
     padding-left: 10px;
     font-family: inherit;
-    text-decoration: none;
-    float: right; }
-  .navbar_titill {
-    padding-right: 10px;
-    padding-left: 10px;
-    font-family: 'Open Sans';
-    color: #eee; }
+    text-decoration: none; }
+  .navbar__button {
+    position: fixed;
+    right: 10px;
+    height: 100%;
+    font-size: 1em;
+    color: #eee;
+    background-color: #333;
+    border: 1px solid #666;
+    border-radius: 4px; }
 
 .footer {
   display: flex;
