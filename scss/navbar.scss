@@ -5,16 +5,21 @@
   width: 100%;
   height: $gutter * 2;
   padding: ($gutter/2);
-  color: rgb(255, 255, 255);
   list-style: none;
   background-color: rgba(0, 0, 0, 0.8);
   align-items: center;
 
+  #{$a-tags} {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: $gutter/4;
+  }
+
   &__titill {
     display: block;
     font-family: 'Roboto Slab';
-    font-weight: bolder;
     font-size: 1.25em;
+    font-weight: bolder;
   }
 
   &__link {
@@ -30,9 +35,16 @@
     position: fixed;
     right: $gutter/2;
     font-size: 1em;
-    background-color: #333;
+    background-color: #666;
     border: 1px solid #666;
     border-radius: 4px;
 
+    transition: background-color 500ms ease;
+    transition: border 500ms ease;
+
+    &:hover {
+      background-color: #333;
+      border: 1px solid #aaa;
+    }
   }
 }
