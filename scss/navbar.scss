@@ -5,10 +5,10 @@
   width: 100%;
   height: $gutter * 2;
   padding: ($gutter/2);
-  background-color: rgba(0, 0, 0, 0.8);
-  list-style: none;
-  align-items: center;
   color: rgb(255, 255, 255);
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
 
   &__titill {
     display: block;

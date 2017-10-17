@@ -1,6 +1,6 @@
 fieldset {
 	border: none;
-	font-family: Open Sans;
+	font-family: 'Open Sans', sans-serif;
 }
 
 input, button, select, option {
@@ -19,7 +19,7 @@ input, button, select, option {
 	padding-left: $gutter/2;
 	margin: 0 0 $gutter;
 
-	/*@media (min-width 600px) {
+	@media (min-width: 600px) {
 		.form__col {
 			width: 50%;
 		}
@@ -30,7 +30,7 @@ input, button, select, option {
 			margin-right: (1/12 * 100) * 1%;
 			margin-left: (1/12 * 100) * 1%;
 		}
-	}*/
+	}
 }
 
 .form {
