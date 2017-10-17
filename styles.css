@@ -9,7 +9,7 @@
 html {
   margin-right: 20px;
   margin-left: 20px;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5; }
   @media (min-width: 1200px) {
@@ -65,18 +65,27 @@ main {
   margin-bottom: 160px;
   background-image: url("../bg.jpg");
   background-attachment: fixed;
+<<<<<<< HEAD
   text-align: center; }
+=======
+  text-align: center;
+  background-size: cover;
+  background-position: center; }
+>>>>>>> a12a1b9b2238e6759f33659671f6c4634c59e944
   .header__content {
     padding: 160px; }
 
 .heading {
-  font-family: Roboto Slab; }
+  font-family: Roboto Slab, serif; }
   .heading--one {
-    font-size: 3em; }
+    font-size: 4em;
+    font-weight: bolder; }
   .heading--two {
-    font-size: 1.5em; }
+    font-size: 2em;
+    font-weight: 500; }
   .heading--three {
-    font-size: 1em; }
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif; }
 
 .text {
   padding: 20px; }
@@ -91,6 +100,19 @@ main {
   margin: 0;
   list-style-type: none;
   background-color: rgba(0, 0, 0, 0.8); }
+  .navbar__link {
+    align-content: flex-end;
+    display: block;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: inherit;
+    text-decoration: none;
+    float: right; }
+  .navbar_titill {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: 'Open Sans';
+    color: #eee; }
 
 .footer {
   display: flex;
@@ -127,20 +149,13 @@ main {
     .col-sm-3 {
       width: 25%; } }
 
-/*.offset {
-  &-2 {
-    margin-left: (2 / 12 * 100) * 1%; // reiknað einsog að ofan
-  }
+.offset-2 {
+  margin-left: 16.66667%; }
 
-  &-sm {
-    @media (max-width: 599px) {
-      &-0 {
-        margin-left: 0;
-      }
-    }
-  }
-}
-*/
+@media (max-width: 599px) {
+  .offset-sm-0 {
+    margin-left: 0; } }
+
 .roundimg {
   border-radius: 50%; }
 
@@ -169,17 +184,19 @@ main {
   }
   */ }
   .profilecard__content {
+    font-family: 'Open Sans';
     display: flex;
     padding: 15px;
     text-align: center;
     flex-direction: column;
     align-items: center; }
   .profilecard__quote {
-    font-family: Roboto Slab;
-    font-size: 3rem; }
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold; }
   .profilecard__heading {
-    font-family: Roboto Slab;
-    font-size: 2rem; }
+    font-size: 1em;
+    font-weight: bold; }
   .profilecard__text {
     margin-bottom: 30px; }
   .profilecard__img {

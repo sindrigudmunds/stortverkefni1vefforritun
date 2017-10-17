@@ -3,6 +3,7 @@
   overflow: hidden;
 
   &__content {
+    font-family: 'Open Sans';
     display: flex;
     padding: 15px;
     text-align: center;
@@ -11,13 +12,14 @@
   }
 
   &__quote {
-    font-family: Roboto Slab;
-    font-size: 3rem;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
   }
 
   &__heading {
-    font-family: Roboto Slab;
-    font-size: 2rem;
+    font-size: 1em;
+    font-weight: bold;
   }
 
   &__text {
