@@ -9,7 +9,7 @@
 html {
   margin-right: 20px;
   margin-left: 20px;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5; }
   @media (min-width: 1200px) {
@@ -72,7 +72,7 @@ main {
     padding: 160px; }
 
 .heading {
-  font-family: Roboto Slab; }
+  font-family: Roboto Slab, serif; }
   .heading--one {
     font-size: 4em;
     font-weight: bolder; }
@@ -81,7 +81,7 @@ main {
     font-weight: 500; }
   .heading--three {
     font-size: 2em;
-    font-family: 'Open Sans'; }
+    font-family: 'Open Sans', sans-serif; }
 
 .text {
   padding: 20px; }
