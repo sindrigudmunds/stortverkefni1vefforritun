@@ -221,7 +221,20 @@ main {
 
 fieldset {
   border: none;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  width: 100%; }
+  fieldset input, fieldset select {
+    margin-bottom: 20px; }
+  fieldset .name_id input {
+    width: 100%; }
+  fieldset .phone_address input {
+    width: 100%; }
+  fieldset .kynval label {
+    padding-left: 10px; }
+  fieldset .kortastuss input, fieldset .kortastuss select {
+    width: 100%; }
+  fieldset .manudur select {
+    width: 50%; }
 
 input, button, select, option {
   font-family: inherit; }
@@ -244,14 +257,13 @@ input, button, select, option {
       margin-right: 8.33333%;
       margin-left: 8.33333%; } }
 
-.form {
+.form__box {
   width: 100%;
-  min-width: 200px;
-  max-width: 800px;
   overflow: hidden;
   align-items: center; }
-  .form__content {
+  .form__box__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: flex-start; }
+    align-content: flex-start;
+    width: 100%; }

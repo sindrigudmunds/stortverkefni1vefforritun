@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="grid.css">
   </head>
-<!--TEST-->
 
   <body>
   	<!-- Navigation bar -->
@@ -48,21 +47,25 @@
 	    						<h2 class="heading heading--two">Persónuupplýsingar</h2>
 	    						<br>
 	    							<fieldset>
-	    								<label>Nafn:<br><input type="text" name="name"></label>
-	    								<br>
-	    								<label>Kennitala:<br><input type="id" name="id" placeholder="123456-7890"></label>
-	    								<br>
-	    								<p>Kyn:</p>
-										<input type="radio" value="f" id="f" name="gender">
-										<label for="f">Kona</label><br>
-						                <input type="radio" value="m" id="m" name="gender">
-						                <label for="m">Karl</label><br>
-						                <input type="radio" value="other" id="other" name="gender">
-						                <label for="other">Annað</label><br>
-						                <label>Sími:<br><input type="text" name="phone" placeholder="+354 812 3456"></label>
-						                <br>
-						                <label>Heimilisfang:<br><input type="text" name="address"></label>
-						                <br>
+	    								<div class="name_id">
+		    								<label>Nafn:<br><input type="text" name="name"></label>
+		    								<br>
+		    								<label>Kennitala:<br><input type="id" name="id" placeholder="123456-7890"></label>
+	    								</div>
+	    								<div class="kynval">
+		    								<p>Kyn:</p>
+											<input type="radio" value="f" id="f" name="gender">
+											<label for="f">Kona</label><br>
+							                <input type="radio" value="m" id="m" name="gender">
+							                <label for="m">Karl</label><br>
+							                <input type="radio" value="other" id="other" name="gender">
+							                <label for="other">Annað</label><br>
+						            	</div>
+						            	<div class="phone_address">
+							                <label>Sími:<br><input type="text" name="phone" placeholder="+354 812 3456"></label>
+							                <br>
+							                <label>Heimilisfang:<br><input type="text" name="address"></label>
+						                </div>
 						                <label><input type="checkbox" name="postlist" id="postlist" value="yes" checked> Skrá mig á póstlista</label>
 	    							</fieldset>
 	                		</div>
@@ -75,20 +78,21 @@
 	    						<h2 class="heading heading--two">Greiðsluupplýsingar</h2>
 	    						<br>
 	    							<fieldset>
-						                <label for="val">Greiða með:</label>
-						                <br>
-						                <select name="val" id="val">
-						                	<option id="kredit" value="kredit">Kreditkorti</option>
-						                    <option id="millif" value="millif">Millifærslu</option>
-						                    <option id="reidufe" value="reidufe">Reiðufé</option>
-						                </select>
-						                <br>
-	    								<label>Nafn á korti:<br><input type="text" name="name"></label>
-	    								<br>
-						                <label>Kortanúmer:<br><input type="text" name="phone" placeholder="5999-9999-9999-9999"></label>
-						                <br>
+	    								<div class="kortastuss">
+							                <label for="val">Greiða með:</label>
+							                <br>
+							                <select name="val" id="val">
+							                	<option id="kredit" value="kredit">Kreditkorti</option>
+							                    <option id="millif" value="millif">Millifærslu</option>
+							                    <option id="reidufe" value="reidufe">Reiðufé</option>
+							                </select>
+							                <br>
+		    								<label>Nafn á korti:<br><input type="text" name="name"></label>
+		    								<br>
+							                <label>Kortanúmer:<br><input type="text" name="phone" placeholder="5999-9999-9999-9999"></label>
+						                </div>
 						                <p>Gildistími:</p>
-						                <br>
+						                <div class="manudur">
 						                <label for="mán">Mán </label>
 						                <select name="mán" id="mán">
 						                	<option id="01" value="01">01</option>
@@ -104,6 +108,8 @@
 						                    <option id="11" value="11">11</option>
 						                    <option id="12" value="12">12</option>
 						                </select>
+						            	</div>
+						            	<div class="ar">
 						                <label for="ár">Ár </label>
 						                <select name="ár" id="ár">
 						                	<option id="2017" value="2017">2017</option>
@@ -111,6 +117,8 @@
 						                	<option id="2019" value="2019">2019</option>
 						                	<option id="2020" value="2020">2020</option>
 						                </select>
+						            	</div>
+						            	</div>
 	    							</fieldset>
 	                		</div>
 	              		</div>
