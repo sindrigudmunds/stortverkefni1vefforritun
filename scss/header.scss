@@ -6,6 +6,8 @@
   background-image: url("../bg.jpg");
   background-attachment: fixed;
   text-align: center;
+  background-size: cover;
+  background-position: center;
 
   &__content {
     padding: ($gutter * 8);
@@ -20,11 +22,17 @@
   background-image: url("../bg-subpage.jpg");
   background-attachment: fixed;
   text-align: left;
+  
   object-fit: contain;
 
   &__content {
     padding: ($gutter * 8);
     color: $white;
     padding-left: 0;
+  }
+}
+  .&__content {
+    color: $white;
+    padding: ($gutter * 8);
   }
 }
