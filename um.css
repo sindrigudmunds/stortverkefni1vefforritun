@@ -73,6 +73,7 @@ section {
   margin-right: -10px;
 }
 
+
 .col {
   padding-left: 35px;
   padding-right: 15px;
@@ -130,19 +131,28 @@ section {
     width: 100%;
   }
 @media (max-width: 600px) {
-  .row {}
-  .col {width: 100%;}
-  .text--blockquote {
-    margin: 30px;
-    float: right;
+  .row {
+    display: block;
   }
+  .col {width: 100%;}
+  .blockquote {
+    float: right;
+    width: 50%;
+    padding-left: 25px;
+  }
+
 }
 @media (max-width: 400px) {
   .header{background-size: auto;}
   .col-6{width: 100%;}
-  .row {flex-wrap: wrap;}
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .col {width: 100%;}
-  .text--blockquote {
-    margin: 30px;
+  .blockquote {
+    float: none;
+    width: 100%;
+    margin: 10px;
   }
 }
