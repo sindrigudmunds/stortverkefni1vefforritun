@@ -28,12 +28,11 @@ main {
 
 .button {
   display: inline-block;
-  width: 100%;
-  max-width: 100px;
   padding: 10px 5px;
   margin: 0;
+  width: 100%;
   overflow: hidden;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #eee;
   text-align: center;
   text-decoration: none;
@@ -47,16 +46,11 @@ main {
   .button:hover {
     color: #eee;
     background-color: #333; }
-  .button--inverted {
-    color: #666;
-    background-color: #eee; }
-  .button--inverted:hover {
-    color: #333;
-    background-color: #ccc; }
-  .button--disabled, .button--disabled:hover {
-    color: #999;
-    background-color: #eee;
-    border-color: #eee; }
+  .button--small {
+    max-width: 130px; }
+  .button--big {
+    height: 60px;
+    max-width: 210px; }
 
 .header {
   display: inline-block;
@@ -292,3 +286,11 @@ input, button, select, option {
     justify-content: center;
     align-content: flex-start;
     width: 100%; }
+
+.endmessage {
+  text-align: center; }
+  .endmessage__text {
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 1.5em; }
