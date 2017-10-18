@@ -173,6 +173,8 @@ section {
     width: 100%;
   }
   .footer {
+    padding: 0;
+    margin: 0;
     color: #ddd;
     background-color: rgba(0, 0, 0, 0.8);
     font-family: 'Open Sans', sans-serif;}
@@ -185,6 +187,7 @@ section {
       margin-right: 80px;
       margin-left: 80px; }
     .footer__signature {
+      padding: 20px;
       margin: 0;
       color: #aaa;
       text-align: center;

@@ -150,6 +150,7 @@ main {
     margin-right: 80px;
     margin-left: 80px; }
   .footer__signature {
+    padding: 20px;
     margin: 0;
     color: #aaa;
     text-align: center;
