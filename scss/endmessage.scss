@@ -1,0 +1,10 @@
+.endmessage {
+  text-align: center;
+
+  &__text {
+    margin-bottom: $gutter;
+    font-family:'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+}
