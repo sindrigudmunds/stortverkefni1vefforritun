@@ -60,7 +60,7 @@ section {
 }
 
 .grid {
-  max-width: 1200;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -172,31 +172,31 @@ section {
     padding: 50px 50px 50px 2%;
     width: 100%;
   }
-  .footer {
+.footer {
+  padding: 0;
+  margin: 0;
+  color: #ddd;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: 'Open Sans', sans-serif;}
+  .footer__info {
+    display: flex;
+    justify-content: center; }
+  .footer__list {
+    display: block;
+    padding: 10px;
+    margin-right: 80px;
+    margin-left: 80px; }
+  .footer__signature {
+    padding: 20px;
+    margin: 0;
+    color: #aaa;
+    text-align: center;
+    border-top: 2px solid #aaa; }
+  .footer ul {
     padding: 0;
     margin: 0;
-    color: #ddd;
-    background-color: rgba(0, 0, 0, 0.8);
-    font-family: 'Open Sans', sans-serif;}
-    .footer__info {
-      display: flex;
-      justify-content: center; }
-    .footer__list {
-      display: block;
-      padding: 10px;
-      margin-right: 80px;
-      margin-left: 80px; }
-    .footer__signature {
-      padding: 20px;
-      margin: 0;
-      color: #aaa;
-      text-align: center;
-      border-top: 2px solid #aaa; }
-    .footer ul {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      text-align: center; }
+    list-style: none;
+    text-align: center; }
 
 @media (max-width: 600px) {
   .row {
