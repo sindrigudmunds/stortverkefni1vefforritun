@@ -140,7 +140,7 @@ section {
   .navbar__link {
     position: fixed;
     right: 80px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     padding-right: 10px;
     padding-left: 10px;
     font-family: inherit;
