@@ -90,6 +90,10 @@ main {
     padding: 20px;
     font-size: 4em;
     font-weight: bolder; }
+  .heading--message {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.5em; }
 
 .text {
   font-family: 'Open Sans', sans-serif; }
@@ -235,8 +239,9 @@ main {
   .profilecard__text {
     margin-bottom: 30px; }
   .profilecard__img {
-    width: 100%;
-    height: 100%; }
+    margin: auto;
+    width: 75%;
+    height: 75%; }
 
 fieldset {
   border: none;
@@ -287,10 +292,15 @@ input, button, select, option {
     align-content: flex-start;
     width: 100%; }
 
-.endmessage {
+.message {
   text-align: center; }
-  .endmessage__text {
-    margin-bottom: 20px;
-    font-family: 'Roboto Slab', serif;
-    font-weight: bold;
-    font-size: 1.5em; }
+
+.body {
+  text-align: left; }
+  .body__text {
+    padding-left: 2.3em; }
+
+.mynd {
+  height: 1.5em;
+  width: 1.5em;
+  margin: 0; }
