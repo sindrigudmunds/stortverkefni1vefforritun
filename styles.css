@@ -78,26 +78,27 @@ main {
   margin-bottom: 160px;
   background-image: url("../bg-subpage.jpg");
   background-attachment: fixed;
+  background-size: cover;
   text-align: left; }
   .header__kaupa__content {
     color: white;
     padding: 160px; }
 
 .heading {
-  font-family: Roboto Slab, serif; }
-  .heading--one {
-    font-size: 4em;
-    font-weight: bolder; }
-  .heading--two {
+  font-family: 'Roboto Slab', serif; }
+  .heading--minni {
     font-size: 2em;
     font-weight: 500;
     animation-delay: 2s; }
-  .heading--three {
-    font-size: 2em;
-    font-family: 'Open Sans', sans-serif; }
+  .heading--body {
+    font-size: 1.5em; }
+  .heading--main {
+    padding: 20px;
+    font-size: 4em;
+    font-weight: bolder; }
 
 .text {
-  padding: 20px; }
+  font-family: 'Open Sans', sans-serif; }
 
 .navbar {
   position: fixed;
