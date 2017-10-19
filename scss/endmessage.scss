@@ -1,0 +1,16 @@
+.message {
+  text-align: center;
+
+}
+.body {
+  text-align: left;
+  &__text {
+    padding-left: 2.3em;
+  }
+}
+
+.mynd {
+  height: 1.5em;
+  width: 1.5em;
+  margin:0;
+}

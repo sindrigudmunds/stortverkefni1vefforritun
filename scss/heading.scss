@@ -1,19 +1,25 @@
 .heading {
-  font-family: Roboto Slab, serif;
+  font-family: 'Roboto Slab', serif;
 
-  &--one {
-    font-size: 4em;
-    font-weight: bolder;
-  }
-
-  &--two {
+  &--minni {
     font-size: 2em;
     font-weight: 500;
     animation-delay: 2s;
   }
 
-  &--three {
-    font-size: 2em;
-    font-family: 'Open Sans', sans-serif;
+  &--body {
+    font-size: 1.5em;
+  }
+
+  &--main {
+    padding: $gutter;
+    font-size: 4em;
+    font-weight: bolder;
+  }
+
+  &--message {
+    margin-bottom: $gutter;
+    font-weight: bold;
+    font-size: 1.5em;
   }
 }
