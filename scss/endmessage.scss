@@ -1,11 +1,25 @@
 .message {
   text-align: center;
+  margin-bottom: $gutter*2;
 
 }
 .body {
   text-align: left;
+  margin-bottom: $gutter*8;
+
   &__text {
     padding-left: 2.3em;
+  }
+
+  &__stuff {
+    margin-top: $gutter *2;
+    margin-bottom: $gutter*2;
+  }
+
+  &__img {
+    object-fit: cover;
+    height: auto;
+    width: auto;
   }
 }
 

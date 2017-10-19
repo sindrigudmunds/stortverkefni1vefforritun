@@ -1,19 +1,19 @@
 .header {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
+  display: inline-flex;
+  width: 100vw;
+  max-width: $max-width;
+  margin-left: 0;
   margin-bottom: ($gutter * 8);
-  background-attachment: fixed;
   text-align: center;
 
   &__content {
-    padding: ($gutter * 8);
+    height: 100vh;
+    padding-top: ($gutter * 4);
+    padding-bottom: ($gutter * 4;)
     background-image: url("../bg.jpg");
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-  }
 }
 
 
