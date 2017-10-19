@@ -1,5 +1,5 @@
 .header {
-  display: inline-flex;
+  display: inline-block;
   width: 100vw;
   max-width: $max-width;
   margin-left: 0;
@@ -9,28 +9,27 @@
   &__content {
     height: 100vh;
     padding-top: ($gutter * 4);
-    padding-bottom: ($gutter * 4;)
+    padding-bottom: ($gutter * 4);
     background-image: url("../bg.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-}
-
-
-.header__kaupa {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  margin-bottom: ($gutter * 8);
-  background-image: url("../bg-subpage.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  text-align: left;
-  object-fit: contain;
-
-  &__content {
-    color: $white;
-    padding: ($gutter * 8);
   }
 
+  &__kaupa {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: ($gutter * 8);
+    background-image: url("../bg-subpage.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: left;
+    object-fit: contain;
+
+    &__content {
+      color: $white;
+      padding: ($gutter * 8);
+    }
+  }
 }

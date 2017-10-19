@@ -62,50 +62,44 @@ main {
   text-align: center; }
   .header__content {
     height: 100vh;
-    padding: 160px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-image: url("../bg.jpg");
     background-attachment: fixed;
     background-position: center;
+    background-size: cover; }
+  .header__kaupa {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 160px;
+    background-image: url("../bg-subpage.jpg");
+    background-attachment: fixed;
     background-size: cover;
-    word-wrap: break-word;
-    width: 100%; }
-
-.header__kaupa {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 160px;
-  background-image: url("../bg-subpage.jpg");
-  background-attachment: fixed;
-<<<<<<< HEAD
-  text-align: left;
-  object-fit: contain; }
-=======
-  background-size: cover;
-  text-align: left; }
->>>>>>> 19f197395726d901eafc9ce66cb87cfab7217cd0
-  .header__kaupa__content {
-    color: white;
-    padding: 160px; }
+    text-align: left;
+    object-fit: contain; }
+    .header__kaupa__content {
+      color: white;
+      padding: 160px; }
 
 .heading {
   font-family: 'Roboto Slab', serif; }
   .heading--minni {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 500;
     animation-delay: 2s; }
   .heading--body {
-    font-size: 1.5em; }
+    font-size: 1.5rem; }
   .heading--main {
     text-align: center;
     padding: 20px;
-    font-size: 4em;
+    font-size: 4rem;
     font-weight: bolder;
     word-break: break; }
   .heading--message {
     margin-bottom: 20px;
     font-weight: bold;
-    font-size: 1.5em; }
+    font-size: 1.5rem; }
 
 .text {
   font-family: 'Open Sans', sans-serif; }
@@ -298,8 +292,6 @@ input, button, select, option {
 .form__col {
   width: 100%;
   display: flex;
-  padding-right: 10px;
-  padding-left: 10px;
   padding-right: 20px;
   padding-left: 20px;
   margin: 0 0 20px; }
@@ -314,7 +306,6 @@ input, button, select, option {
 .form__box {
   width: 100%;
   overflow: hidden;
-  align-items: center; }
   align-items: center;
   margin: auto; }
   .form__box__content {
@@ -323,18 +314,17 @@ input, button, select, option {
     justify-content: center;
     align-content: flex-start;
     width: 100%; }
-<<<<<<< HEAD
     @media (min-width: 600px) {
       .form__box__content .__content {
         width: 50%; } }
     @media (min-width: 1200px) {
       .form__box__content .__content {
         width: 33.33333%; } }
-=======
 
 .message {
+  margin-bottom: 20px;
   text-align: center;
-  margin-bottom: 40px; }
+  align-items: center; }
 
 .body {
   text-align: left;
@@ -353,7 +343,6 @@ input, button, select, option {
   height: 1.5em;
   width: 1.5em;
   margin: 0; }
-<<<<<<< HEAD
 
 @keyframes fadein {
   from {
@@ -379,6 +368,3 @@ input, button, select, option {
 
 .fadein--3s {
   animation: fadein 6s; }
-=======
->>>>>>> 19f197395726d901eafc9ce66cb87cfab7217cd0
->>>>>>> 20530a94a7f4b32559a3994f716e0e8cf7ac458e
