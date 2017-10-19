@@ -2,6 +2,7 @@
   font-family: 'Roboto Slab', serif;
 
   &--minni {
+    margin-top: $gutter*8;
     font-size: 2rem;
     font-weight: 500;
     animation-delay: 2s;
@@ -13,10 +14,10 @@
 
   &--main {
     text-align: center;
-    padding: $gutter;
     font-size: 4rem;
     font-weight: bolder;
     word-break: break;
+    margin-bottom: $gutter*2;
   }
 
   &--message {

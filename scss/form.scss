@@ -50,8 +50,13 @@ fieldset {
 }
 
 .takki {
+<<<<<<< HEAD
 	padding-left: 50px;
 	padding-right: 50px;
+=======
+	margin-left: auto;
+	margin-right: auto;
+>>>>>>> c5538643696b38135226145192ca34d7ce797886
 	max-width: (3.75/12 * 100) * 1%;
 	margin-bottom: 100px;
   	text-align: center;
@@ -61,7 +66,11 @@ fieldset {
 input, button, select, option {
 	font-family: inherit;
 }
+<<<<<<< HEAD
 
+=======
+/*
+>>>>>>> c5538643696b38135226145192ca34d7ce797886
 .row {
 	display: flex;
 	flex-wrap: wrap;
@@ -70,10 +79,15 @@ input, button, select, option {
 }
 
 .col {
+<<<<<<< HEAD
+=======
+	//width: 100%;
+>>>>>>> c5538643696b38135226145192ca34d7ce797886
 	display: flex;
 	padding-right: $gutter/2;
 	padding-left: $gutter/2;
 	margin: 0 0 $gutter;
+<<<<<<< HEAD
 }
 
 
@@ -89,6 +103,19 @@ form {
 		align-items: center;
 		width: 100%;
 
+=======
+
+}*/
+
+
+.form {
+
+	&__content {
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: $gutter*4;
+>>>>>>> c5538643696b38135226145192ca34d7ce797886
 		@media (min-width: 600px) {
 			.__content {
 				width: 50%;
@@ -102,4 +129,8 @@ form {
 			}
 		}
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c5538643696b38135226145192ca34d7ce797886

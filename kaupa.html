@@ -6,7 +6,6 @@
     <title>Fooþjónustan</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="grid.css">
   </head>
 
   <body>
@@ -43,6 +42,7 @@
 
     <!-- Form -->
     <section>
+<<<<<<< HEAD
     	<grid>
     		<row>
 
@@ -82,6 +82,46 @@
 	    			<form>
 	    				<div class="form__content">
 	    					<h3 class="heading heading--three">Greiðsluupplýsingar</h3>
+=======
+    	<div class="grid">
+    		<div class="row">
+    			<div class="col col-4">
+    				<form class="form"> <!-- ?? <div class="form"> ?? -->
+	    				<div class="form__content">
+	    					<h2 class="heading heading--two">Persónuupplýsingar</h2>
+	    					<br>
+	    					<fieldset>
+	    						<div class="name_id">
+		    						<label>Nafn:<br><input type="text" name="name"></label>
+		    						<br>
+		    						<label>Kennitala:<br><input type="id" name="id" placeholder="123456-7890"></label>
+	    						</div>
+	    						<div class="kynval">
+		    						<p>Kyn:</p>
+									<input type="radio" value="f" id="f" name="gender">
+									<label for="f">Kona</label><br>
+							              <input type="radio" value="m" id="m" name="gender">
+							              <label for="m">Karl</label><br>
+							              <input type="radio" value="other" id="other" name="gender">
+							              <label for="other">Annað</label><br>
+						        </div>
+						        <div class="phone_address">
+						        	<label>Sími:<br><input type="text" name="phone" placeholder="+354 812 3456"></label>
+							        <br>
+							        <label>Heimilisfang:<br><input type="text" name="address"></label>
+						        </div>
+						        <label><input type="checkbox" name="postlist" id="postlist" value="yes" checked> Skrá mig á póstlista</label>
+	    					</fieldset>
+	                	</div>
+	              	</form>
+	            </div>
+
+
+	    		<div class="col col-4">
+	    			<form>
+	    				<div class="form__content">
+	    					<h2 class="heading heading--two">Greiðsluupplýsingar</h2>
+>>>>>>> c5538643696b38135226145192ca34d7ce797886
 	    					<br>
 	    					<fieldset>
 	    						<div class="kortastuss">
@@ -98,6 +138,10 @@
 							        <label>Kortanúmer:<br><input type="text" name="phone" placeholder="5999-9999-9999-9999"></label>
 						        </div>
 						        <p>Gildistími:</p>
+<<<<<<< HEAD
+=======
+						        <div class="kort_info">
+>>>>>>> c5538643696b38135226145192ca34d7ce797886
 						            <div class="manudur">
 						            <label for="mán">Mán </label>
 						            <select name="mán" id="mán">
@@ -124,6 +168,7 @@
 						                	<option id="2020" value="2020">2020</option>
 						                </select>
 						            </div>
+<<<<<<< HEAD
 	    						</fieldset>
 	                		</div>
 	              		</form
@@ -148,18 +193,54 @@
           <li>Fooþjónustan</li>
           <li>123-4567</li>
         </ul>
+=======
+						        </div>
+	    						</fieldset>
+	                		</div>
+	              		</form>
+	            </div>
+        </div>
+        <div class="row">
+           <div class="col col-12">
+           <div class="takki">
+             <input type="submit" value="Panta" class="button">
+           </div>
+         </div>
+        </div>
+>>>>>>> c5538643696b38135226145192ca34d7ce797886
       </div>
-      <div class="footer__list">
-        <ul>
-          <li>Opið 12-13 alla daga</li>
-          <li>Bargata 1</li>
-          <li>900 Foobar</li>
-        </ul>
+	</section>
+  <!--Footer-->
+  <section>
+    <div class="grid">
+      <div class="row">
+        <div class="col col-12">
+          <footer class="footer">
+            <!--block -->
+            <div class="footer__info">
+              <div class="footer__list">
+                <ul>
+                  <li>Fooþjónustan</li>
+                  <li>123-4567</li>
+                </ul>
+              </div>
+              <div class="footer__list">
+                <ul>
+                  <li>Opið 12-13 alla daga</li>
+                  <li>Bargata 1</li>
+                  <li>900 Foobar</li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__signature">
+              <p>© Fooþjónustan 2017</p>
+            </div>
+          </footer>
+        </div>
+
       </div>
+
     </div>
-    <div class="footer__signature">
-      <p>© Fooþjónustan 2017</p>
-    </div>
-  </footer>
+  </section>
   </body>
 </html>

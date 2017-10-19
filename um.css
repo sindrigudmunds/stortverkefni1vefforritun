@@ -6,27 +6,6 @@
   padding: 0;
   margin: 0; }
 
-:root {
-  --offset: 10px;
-  --max_width: 72rem;
-  --columns: 12;
-  --gutter: 20px;
-  --color: hsla(204, 80%, 72%, 0.25);
-}
-
-/* Helper variables */
-:root {
-  --repeating-width: calc(100% / var(--columns));
-  --column-width: calc((100% / var(--columns)) - var(--gutter));
-  --background-width: calc(100% + var(--gutter));
-  --background-columns: repeating-linear-gradient(
-    to right,
-    var(--color),
-    var(--color) var(--column-width),
-    transparent var(--column-width),
-    transparent var(--repeating-width)
-  );
-}
 
 /* Styling */
 html {
