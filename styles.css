@@ -85,6 +85,7 @@ main {
 .heading {
   font-family: 'Roboto Slab', serif; }
   .heading--minni {
+    margin-top: 160px;
     font-size: 2rem;
     font-weight: 500;
     animation-delay: 2s; }
@@ -92,10 +93,10 @@ main {
     font-size: 1.5rem; }
   .heading--main {
     text-align: center;
-    padding: 20px;
     font-size: 4rem;
     font-weight: bolder;
-    word-break: break; }
+    word-break: break;
+    margin-bottom: 40px; }
   .heading--message {
     margin-bottom: 20px;
     font-weight: bold;
@@ -258,68 +259,6 @@ main {
     margin: auto;
     width: 75%;
     height: 75%; }
-
-fieldset {
-  border: none;
-  font-family: 'Open Sans', sans-serif;
-  width: 100%; }
-  fieldset input, fieldset select {
-    margin-bottom: 20px; }
-  fieldset .name_id input {
-    width: 100%; }
-  fieldset .phone_address input {
-    width: 100%; }
-  fieldset .kynval label {
-    padding-left: 10px; }
-  fieldset .kortastuss input, fieldset .kortastuss select {
-    width: 100%; }
-  fieldset .manudur select {
-    width: 50%; }
-  fieldset .ar select {
-    width: 50%; }
-
-.takki {
-  padding-left: 50px;
-  padding-right: 50px; }
-
-input, button, select, option {
-  font-family: inherit; }
-
-.form__row {
-  display: flex;
-  flex-wrap: wrap; }
-
-.form__col {
-  width: 100%;
-  display: flex;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin: 0 0 20px; }
-  @media (min-width: 600px) {
-    .form__col .form__col {
-      width: 50%; } }
-  @media (min-width: 1200px) {
-    .form__col .form__col {
-      margin-right: 8.33333%;
-      margin-left: 8.33333%; } }
-
-.form__box {
-  width: 100%;
-  overflow: hidden;
-  align-items: center;
-  margin: auto; }
-  .form__box__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: flex-start;
-    width: 100%; }
-    @media (min-width: 600px) {
-      .form__box__content .__content {
-        width: 50%; } }
-    @media (min-width: 1200px) {
-      .form__box__content .__content {
-        width: 33.33333%; } }
 
 .message {
   margin-bottom: 20px;
