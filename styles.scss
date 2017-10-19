@@ -15,6 +15,7 @@ $a-tags: 'a, a:active, a:hover, a:visited';
 html {
   margin-right: $gutter;
   margin-left: $gutter;
+  overflow-x: hidden;
 
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -49,3 +50,4 @@ main { /* stylelint-disable-line */
 @import "scss/profilecard";
 @import "scss/form";
 @import "scss/endmessage";
+@import "scss/fadein";

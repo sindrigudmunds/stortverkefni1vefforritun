@@ -1,0 +1,57 @@
+# Stórt verkefni 1
+
+Vefsíða sem samanstendur af forsíðu, síðu með upplýsingum um vöruna og síðu þar sem notandi getur sett inn upplýsingar og pantað vöruna.
+
+### Forkröfur
+
+Vefsíðan er ekki vistuð hjá vefþjóni og því þarf notandi að hafa aðgang að öllum kóðaskrám og notast svo við tólið browser-sync en það leyfir notanda að keyra lítinn vefþjón á sinni eigin vél.
+Til að notast við browser-sync þarf notandi að hafa halið niður Node.js [https://nodejs.org/en/].
+Síðan þarf að setja upp pakkastjórann npm (gert með -g flaggi):
+
+< npm install -g browser-sync
+
+Ath. að mappan með kóðaskránum þarf einnig að innihalda package.json skrá sem nýtir browser-sync.
+
+
+### Uppsetning
+
+Til að keyra vefsíðuna þarf notandi að fara inn í möppuna þar sem vefsíðan er vistuð (eftir að Node.js hefur verið uppsett) og keyra eftirfarandi skipanir:
+
+< npm install
+< npm run browser-sync
+
+Vafri opnar þá 'http://localhost:3000' þar sem notandi getur nálgast vefsíðuna.
+
+
+### Skipulag og uppsetning kóða
+
+Verkefnið skiptist í nokkrar skrár í einni möppu auk þess sem allar .scss skrár eru geymdar í sömu möppu.
+
+Virki síðunnar er útfærð í eftirfarandi .html skrám:
+* index
+* kaupa
+* um
+
+Þessar .html skrár lesa inn styles.css en þannig er útlit síðunnar útfært.
+Skráin styles.css les svo frá styles.scss sem les inn kóðann úr eftirfarandi .scss skrám:
+
+* button
+* endmessage
+* fadein
+* footer
+* form
+* grid
+* header
+* heading
+* navbar
+* profilecard
+* roundimg
+* text
+
+
+## Höfundar
+
+* Anna Karen Kristinsdóttir
+* Hörn Heiðarsdóttir
+* Jónas Bergsteinsson
+* Sindri Þór Guðmundsson
