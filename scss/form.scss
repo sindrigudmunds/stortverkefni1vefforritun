@@ -36,6 +36,17 @@ fieldset {
 			width: 50%;
 		}
 	}
+
+	.ar {
+		select {
+			width: 50%;
+		}
+	}
+}
+
+.takki {
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 input, button, select, option {
@@ -54,6 +65,8 @@ input, button, select, option {
 	display: flex;
 	padding-right: $gutter/2;
 	padding-left: $gutter/2;
+	padding-right: $gutter;
+	padding-left: $gutter;
 	margin: 0 0 $gutter;
 
 	@media (min-width: 600px) {
@@ -76,6 +89,7 @@ input, button, select, option {
 	//width: (4/12 * 100) * 1%;
 	overflow: hidden;
 	align-items: center;
+	margin: auto;
 
 	&__content {
 		display: flex;
@@ -83,5 +97,18 @@ input, button, select, option {
 		justify-content: center;
 		align-content: flex-start;
 		width: 100%;
+
+		@media (min-width: 600px) {
+			.__content {
+				width: 50%;
+			}
+		}
+
+		@media (min-width: 1200px) {
+			.__content {
+				width: (4/12 * 100) * 1%;
+			}
+		}
 	}
+}
 }

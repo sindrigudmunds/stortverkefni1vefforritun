@@ -26,6 +26,7 @@
   background-attachment: fixed;
   background-size: cover;
   text-align: left;
+  object-fit: contain;
 
   &__content {
     color: $white;

@@ -77,8 +77,13 @@ main {
   margin-bottom: 160px;
   background-image: url("../bg-subpage.jpg");
   background-attachment: fixed;
+<<<<<<< HEAD
+  text-align: left;
+  object-fit: contain; }
+=======
   background-size: cover;
   text-align: left; }
+>>>>>>> 19f197395726d901eafc9ce66cb87cfab7217cd0
   .header__kaupa__content {
     color: white;
     padding: 160px; }
@@ -276,6 +281,12 @@ fieldset {
     width: 100%; }
   fieldset .manudur select {
     width: 50%; }
+  fieldset .ar select {
+    width: 50%; }
+
+.takki {
+  padding-left: 50px;
+  padding-right: 50px; }
 
 input, button, select, option {
   font-family: inherit; }
@@ -289,6 +300,8 @@ input, button, select, option {
   display: flex;
   padding-right: 10px;
   padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin: 0 0 20px; }
   @media (min-width: 600px) {
     .form__col .form__col {
@@ -302,12 +315,22 @@ input, button, select, option {
   width: 100%;
   overflow: hidden;
   align-items: center; }
+  align-items: center;
+  margin: auto; }
   .form__box__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: flex-start;
     width: 100%; }
+<<<<<<< HEAD
+    @media (min-width: 600px) {
+      .form__box__content .__content {
+        width: 50%; } }
+    @media (min-width: 1200px) {
+      .form__box__content .__content {
+        width: 33.33333%; } }
+=======
 
 .message {
   text-align: center;
@@ -330,6 +353,7 @@ input, button, select, option {
   height: 1.5em;
   width: 1.5em;
   margin: 0; }
+<<<<<<< HEAD
 
 @keyframes fadein {
   from {
@@ -355,3 +379,6 @@ input, button, select, option {
 
 .fadein--3s {
   animation: fadein 6s; }
+=======
+>>>>>>> 19f197395726d901eafc9ce66cb87cfab7217cd0
+>>>>>>> 20530a94a7f4b32559a3994f716e0e8cf7ac458e
