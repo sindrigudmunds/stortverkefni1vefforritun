@@ -74,16 +74,13 @@ main {
   margin-bottom: 160px;
   background-image: url("../bg-subpage.jpg");
   background-attachment: fixed;
-<<<<<<< HEAD
+  background-size: cover;
   text-align: left;
   object-fit: contain; }
-=======
-  background-size: cover;
-  text-align: left; }
->>>>>>> 19f197395726d901eafc9ce66cb87cfab7217cd0
   .header__kaupa__content {
     color: white;
-    padding: 160px; }
+    padding: 160px;
+    font-size: 2em; }
 
 .heading {
   font-family: 'Roboto Slab', serif; }
@@ -253,7 +250,9 @@ main {
 fieldset {
   border: none;
   font-family: 'Open Sans', sans-serif;
-  width: 100%; }
+  width: 100%;
+  max-width: 1200px;
+  min-width: 200px; }
   fieldset input, fieldset select {
     margin-bottom: 20px; }
   fieldset .name_id input {
@@ -265,20 +264,25 @@ fieldset {
   fieldset .kortastuss input, fieldset .kortastuss select {
     width: 100%; }
   fieldset .manudur select {
-    width: 50%; }
+    width: 50%;
+    display: inline-block; }
   fieldset .ar select {
-    width: 50%; }
+    width: 50%;
+    display: inline-block; }
 
 .takki {
   padding-left: 50px;
-  padding-right: 50px; }
+  padding-right: 50px;
+  max-width: 31.25%; }
 
 input, button, select, option {
   font-family: inherit; }
 
 .form__row {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px; }
 
 .form__col {
   width: 100%;
@@ -294,6 +298,11 @@ input, button, select, option {
       margin-right: 8.33333%;
       margin-left: 8.33333%; } }
 
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; }
+
 .form__box {
   width: 100%;
   overflow: hidden;
@@ -305,14 +314,13 @@ input, button, select, option {
     justify-content: center;
     align-content: flex-start;
     width: 100%; }
-<<<<<<< HEAD
     @media (min-width: 600px) {
       .form__box__content .__content {
         width: 50%; } }
     @media (min-width: 1200px) {
       .form__box__content .__content {
-        width: 33.33333%; } }
-=======
+        width: 33.33333%;
+        margin-left: 8.33333%; } }
 
 .message {
   text-align: center; }
@@ -326,4 +334,3 @@ input, button, select, option {
   height: 1.5em;
   width: 1.5em;
   margin: 0; }
->>>>>>> 19f197395726d901eafc9ce66cb87cfab7217cd0

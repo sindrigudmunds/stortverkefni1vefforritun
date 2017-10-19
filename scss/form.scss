@@ -2,6 +2,8 @@ fieldset {
 	border: none;
 	font-family: 'Open Sans', sans-serif;
 	width: 100%;
+	max-width: 1200px;
+	min-width: 200px;
 
 	input, select {
 		margin-bottom: 20px;
@@ -34,12 +36,14 @@ fieldset {
 	.manudur {
 		select {
 			width: 50%;
+			display: inline-block;
 		}
 	}
 
 	.ar {
 		select {
 			width: 50%;
+			display: inline-block;
 		}
 	}
 }
@@ -47,6 +51,7 @@ fieldset {
 .takki {
 	padding-left: 50px;
 	padding-right: 50px;
+	max-width: (3.75/12 * 100) * 1%;
 }
 
 input, button, select, option {
@@ -56,11 +61,12 @@ input, button, select, option {
 .form__row {
 	display: flex;
 	flex-wrap: wrap;
+	margin-left: -$gutter/2;
+	margin-right: -$gutter/2;
 }
 
 .form__col {
 	width: 100%;
-	//max-width: (4/12 *100) * 1%;
 	display: flex;
 	padding-right: $gutter;
 	padding-left: $gutter;
@@ -78,6 +84,13 @@ input, button, select, option {
 			margin-left: (1/12 * 100) * 1%;
 		}
 	}
+}
+
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 .form__box {
@@ -102,6 +115,7 @@ input, button, select, option {
 		@media (min-width: 1200px) {
 			.__content {
 				width: (4/12 * 100) * 1%;
+				margin-left: (1/12 * 100) * 1%;
 			}
 		}
 	}
