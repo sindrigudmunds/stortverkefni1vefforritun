@@ -23,6 +23,7 @@
   background-image: url("../bg-subpage.jpg");
   background-attachment: fixed;
   text-align: left;
+  object-fit: contain;
 
   &__content {
     color: $white;

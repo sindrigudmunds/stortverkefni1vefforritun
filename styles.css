@@ -78,7 +78,8 @@ main {
   margin-bottom: 160px;
   background-image: url("../bg-subpage.jpg");
   background-attachment: fixed;
-  text-align: left; }
+  text-align: left;
+  object-fit: contain; }
   .header__kaupa__content {
     color: white;
     padding: 160px; }
@@ -247,6 +248,12 @@ fieldset {
     width: 100%; }
   fieldset .manudur select {
     width: 50%; }
+  fieldset .ar select {
+    width: 50%; }
+
+.takki {
+  padding-left: 50px;
+  padding-right: 50px; }
 
 input, button, select, option {
   font-family: inherit; }
@@ -258,8 +265,8 @@ input, button, select, option {
 .form__col {
   width: 100%;
   display: flex;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin: 0 0 20px; }
   @media (min-width: 600px) {
     .form__col .form__col {
@@ -272,10 +279,17 @@ input, button, select, option {
 .form__box {
   width: 100%;
   overflow: hidden;
-  align-items: center; }
+  align-items: center;
+  margin: auto; }
   .form__box__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: flex-start;
     width: 100%; }
+    @media (min-width: 600px) {
+      .form__box__content .__content {
+        width: 50%; } }
+    @media (min-width: 1200px) {
+      .form__box__content .__content {
+        width: 33.33333%; } }
